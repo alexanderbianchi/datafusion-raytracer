@@ -1,0 +1,15 @@
+[package]
+name = "datafusion-raytracer"
+version = "0.1.0"
+edition = "2024"
+description = "A ray tracer built entirely on Apache DataFusion's DataFrame API"
+
+[dependencies]
+datafusion = "52"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+env_logger = "0.11"
+strum = "0.27"
+strum_macros = "0.27"
+
+[dev-dependencies]
+tempfile = "3"
